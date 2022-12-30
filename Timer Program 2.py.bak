@@ -38,3 +38,6 @@ for i in range(duration_in_seconds, 0, -1):
         label.flash()
 
 label['text'] = "Time's up!"
+root.update()
+time.sleep(2)
+root.destroy()
