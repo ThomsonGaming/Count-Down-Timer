@@ -34,6 +34,8 @@ for i in range(duration_in_seconds, 0, -1):
     label['text'] = f'{minutes:02}:{seconds:02}'
     root.update()
     time.sleep(1)
+    if i <= 30:
+        label.flash()
 
 label['text'] = "Time's up!"
 root.update()
